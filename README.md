@@ -19,3 +19,9 @@ and optionally:
 ignore_cert = true
 fields = list,of,ldap,fields
 ```
+
+for Active Directory you will want something like:
+
+```
+searchpre = sAMAccountName
+```
