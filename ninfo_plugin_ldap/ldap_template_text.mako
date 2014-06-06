@@ -1,7 +1,7 @@
 <%
-    fields = plugin_config['fields'].split()
-    if not fields:
-        fields = ("preferredDisplayName", "eduPersonPrimaryAffiliation", "eduPersonAffiliation", "title", "eduPersonPrimaryOrgUnitDN", "mail", "campusAddress", "telephoneNumber", "uid")
+    fields = ("preferredDisplayName", "eduPersonPrimaryAffiliation", "eduPersonAffiliation", "title", "eduPersonPrimaryOrgUnitDN", "mail", "campusAddress", "telephoneNumber", "uid")
+    if 'fields' in plugin_config:
+        fields = plugin_config['fields'].split()
 %>
 
 %for f in [x for x in fields if x in record]:
