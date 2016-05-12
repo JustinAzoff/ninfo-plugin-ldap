@@ -18,6 +18,7 @@ and optionally:
 ```
 ignore_cert = true
 fields = list,of,ldap,fields
+strip = text_to_delete_from_output
 ```
 
 for Active Directory you will want something like:
